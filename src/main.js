@@ -11,3 +11,16 @@ new Vue({
     store,
     render: h => h(App)
 }).$mount('#app');
+
+
+if (window.parent !== window) {
+    const target = window.parent || window.opener;
+    setInterval(() => {
+        target.postMessage(
+            {
+                href: window.location.href
+            },
+            '*'
+        );
+    }, 1000);
+}
