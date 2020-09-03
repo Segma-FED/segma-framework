@@ -18,7 +18,7 @@ if (window.parent !== window) {
     setInterval(() => {
         target.postMessage(
             {
-                href: window.location.href
+                pathname: window.location.pathname
             },
             '*'
         );
