@@ -109,7 +109,7 @@ import SearchWrapper from './SearchWrapper';
 import SearchListItem from './SearchListItem';
 import TableActionButton from './TableActionButton';
 import { tablePageSize } from './util';
-import TableDataEmpty from './TableDataEmpty';
+import TableDataEmpty from './table_data_empty/TableDataEmpty';
 import AdaptiveTable from './AdaptiveTable';
 
 export default {

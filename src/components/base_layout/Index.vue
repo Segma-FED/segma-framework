@@ -136,6 +136,7 @@ export default {
         margin-left: 0;
         height: 100%;
         background: #ffffff;
+        box-sizing: border-box;
 
         &.has-left {
             margin-left: 220px;

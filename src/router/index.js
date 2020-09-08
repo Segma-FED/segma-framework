@@ -10,17 +10,12 @@ const routes = [
         component: () => import('../components/base_layout/Index.vue'),
         children: [
             {
-                path: '/menu1',
-                name: 'menu1',
-                component: () => import('../views/About.vue')
-            },
-            {
-                path: '/menu2',
+                path: '/table-and-Form',
                 name: 'tableAndForm',
                 component: () => import('../components/table_and_form/Index.vue')
             },
             {
-                path: '/menu3',
+                path: '/table-layout',
                 name: 'tableLayout',
                 component: () => import('../components/table_layout/Index.vue')
             },
@@ -34,12 +29,12 @@ const routes = [
                 name: 'cardLayout',
                 component: () => import('../components/card_layout/CardLayoutDemo.vue')
             },
+            {
+                path: 'bread-crumb-layout',
+                name: 'breadCrumbLayout',
+                component: () => import('../components/bread_crumb_layout/Index.vue')
+            }
         ]
-    },
-    {
-        path: '/about',
-        name: 'About',
-        component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
     }
 ];
 

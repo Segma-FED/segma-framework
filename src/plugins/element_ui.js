@@ -80,6 +80,9 @@ import {
     Notification
 } from 'element-ui';
 
+
+import { Title } from '@segma/vue-components';
+
 export default {
     install(Vue) {
         Vue.use(Pagination);
@@ -155,6 +158,7 @@ export default {
         Vue.use(Backtop);
         Vue.use(PageHeader);
         Vue.use(CascaderPanel);
+        Vue.use(Title);
 
         Vue.use(Loading.directive);
 

@@ -3,7 +3,7 @@
     <div class="card-layout-demo">
         <adaptive-card v-for="(item,index) in cardData"
                        :key="index">
-            <div style="border: 1px solid red">{{item.label}}</div>
+            <div class="box-content">{{item.label}}</div>
         </adaptive-card>
     </div>
 </template>
@@ -19,7 +19,10 @@ export default {
             cardData: [
                 { id: 1, label: 1 },
                 { id: 2, label: 2 },
-                { id: 3, label: 3 }
+                { id: 3, label: 3 },
+                { id: 1, label: 4 },
+                { id: 2, label: 5 },
+                { id: 3, label: 6 }
             ]
         };
     }
@@ -31,5 +34,11 @@ export default {
 .card-layout-demo {
     display: flex;
     flex-wrap: wrap;
+    padding: 20px;
+    box-sizing: border-box;
+
+    .box-content {
+        border: 1px solid gray;
+    }
 }
 </style>

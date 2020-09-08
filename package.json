@@ -5,7 +5,6 @@
     "scripts": {
         "serve": "vue-cli-service serve",
         "build": "vue-cli-service build",
-        "build:watch": "vue-cli-service build --watch",
         "lint": "vue-cli-service lint",
         "lintfix": "vue-cli-service lint --fix"
     },
@@ -14,9 +13,11 @@
         "core-js": "^3.6.5",
         "vue": "^2.6.11",
         "vue-router": "^3.3.4",
-        "vuex": "^3.5.1"
+        "vuex": "^3.5.1",
+        "babel-plugin-import": "^1.13.0"
     },
     "devDependencies": {
+        "@segma/vue-components": "^0.1.0",
         "@vue/cli-plugin-babel": "~4.4.6",
         "@vue/cli-plugin-eslint": "~4.4.6",
         "@vue/cli-plugin-router": "~4.4.6",

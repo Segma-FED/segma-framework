@@ -7,7 +7,7 @@
                  default-expand-all
                  @node-click="handleNodeClick">
             <template v-slot="{ node, data }">
-                <div :class="['node-item',{ active: isMatch(data) }]">
+                <div v-title="{ mode: 'overflow', text: `${data.label}`}" :class="['node-item',{ active: isMatch(data) }]">
                     <i v-if="data.icon"
                        :class="['iconfont', `${data.icon}`]"></i>
                     {{data.label}}
@@ -59,6 +59,11 @@ export default {
                     label: 'cardLayout模板',
                     icon: 'se-icon-f-manuallocation',
                     routeName: 'cardLayout'
+                },
+                {
+                    label: 'breadCrumbLayout模板',
+                    icon: 'se-icon-f-manuallocation',
+                    routeName: 'breadCrumbLayout'
                 }
             ];
         }
@@ -123,6 +128,9 @@ export default {
         font-size: 14px;
         text-align: left;
         color: rgba(0, 0, 0, 0.65);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
 
         &:hover, &.active {
             color: rgba(34, 91, 246, 1);
